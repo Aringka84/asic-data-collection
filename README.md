@@ -12,13 +12,15 @@ Designed to fetch representative data from the ASIC (Australian Securities and I
 ```bash
 sudo apt update
 sudo apt install curl
+sudo apt install git
 ```
 
 ### Step 1: Install NVM (Node Version Manager)
 Run the following command to download and install NVM:
 
+```bash
  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash 
-
+```
 After the installation, you need to load NVM. You can do this by adding the following lines to your `~/.bashrc` or `~/.bash_profile`:
 
 
@@ -31,6 +33,7 @@ Then, run:
 
 ## Step 2: Install the Latest Version of Node.js
     Now that NVM is installed, you can install the latest version of Node.js by running:
+
     nvm install node
 
 You can verify the installation by checking the Node.js version:
@@ -40,9 +43,6 @@ You can verify the installation by checking the Node.js version:
 To set the installed version as the default, run:
 nvm alias default node
 
-##Install Git:
-    sudo apt update
-    sudo apt install git
 
 ##Create a new directory for the project and navigate into it
 
