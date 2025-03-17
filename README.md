@@ -3,15 +3,10 @@
 
 Project Overview
 
-Designed to fetch representative data from the ASIC (Australian Securities and Investments Commission) API, process that data, and store it in either Google Sheets or a CSV file. The configuration for the API, request behavior, and output options are defined in a separate configuration file.
+Designed to fetch representative data from the ASIC (Australian Securities and Investments Commission) API, process that data, and store it in either Google Sheets or a CSV file or both. The configuration for the API, request behavior, and output options are defined in a separate configuration file.
 
 
-
-
-Setup:
-
-
-#Install Node.js
+##Setup- Install Node.js
 
 ## Prerequisites
 
@@ -31,42 +26,48 @@ export NVM_DIR="$HOME/.nvm"
 
 Then, run:
 
-source ~/.bashrc
+    source ~/.bashrc
 
 ## Step 2: Install the Latest Version of Node.js
     Now that NVM is installed, you can install the latest version of Node.js by running:
     nvm install node
 
 You can verify the installation by checking the Node.js version:
-node -v
+    node -v
 
 ## Step 3: Set Default Node.js Version
 To set the installed version as the default, run:
 nvm alias default node
 
 ##Install Git:
-sudo apt update
-sudo apt install git
+    sudo apt update
+    sudo apt install git
 
 ##Create a new directory for the project and navigate into it
 
-    mkdir asic-data
+    mkdir asic-data-collection
 
 ##Navigate to the asic-data directory
 
-    cd asic-data
+    cd asic-data-collection
 
-    git clone <REPOSITORY_URL> .
+    git clone https://github.com/Aringka84/asic-data-collection
 
-    npm install
+    npm install -g npm@11.2.0
 
+    
+##New Screen Session
+    sudo apt install screen
 
 
 ##Start/Run:
-node fetchRepresentatives.js <starting-id> <Ending-id> 
+
+    screen -S <Session-NAME>
+    
+    node fetchRepresentatives.js <starting-id> <Ending-id> 
 
 
-
+---------------------------------------------------------
 ##Key Components
 
 ##Configuration File (config.js)
