@@ -23,50 +23,59 @@ Run the following command to download and install NVM:
 ```
 After the installation, you need to load NVM. You can do this by adding the following lines to your `~/.bashrc` or `~/.bash_profile`:
 
-
+```bash
 export NVM_DIR="$HOME/.nvm"[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-
+```
 
 Then, run:
-
+```bash
     source ~/.bashrc
-
+```
 ## Step 2: Install the Latest Version of Node.js
     Now that NVM is installed, you can install the latest version of Node.js by running:
 
+```bash
     nvm install node
+```
 
 You can verify the installation by checking the Node.js version:
     node -v
 
 ## Step 3: Set Default Node.js Version
 To set the installed version as the default, run:
-nvm alias default node
+
+```bash
+    nvm alias default node
+```
 
 
 ##Create a new directory for the project and navigate into it
-
+```bash
     mkdir asic-data-collection
-
+```
 ##Navigate to the asic-data-collection directory
-
+```bash
     cd asic-data-collection
-
+```
+```bash
     git clone https://github.com/Aringka84/asic-data-collection
-
+```
+```bash
     npm install -g npm@11.2.0
-
+```
     
 New Screen Session
+```bash
     sudo apt install screen
-
+```
 
 ##Start/Run:
-
+```bash
     screen -S <Session-NAME>
-    
+```  
+```bash
     node fetchRepresentatives.js <starting-id> <Ending-id> 
-
+```
 
 ---------------------------------------------------------
 ## Key Components
