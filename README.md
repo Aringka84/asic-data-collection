@@ -17,14 +17,12 @@ sudo apt install curl
 ### Step 1: Install NVM (Node Version Manager)
 Run the following command to download and install NVM:
 
-```
  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash 
 
 After the installation, you need to load NVM. You can do this by adding the following lines to your `~/.bashrc` or `~/.bash_profile`:
 
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+export NVM_DIR="$HOME/.nvm"[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 
 Then, run:
