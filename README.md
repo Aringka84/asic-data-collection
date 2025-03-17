@@ -17,69 +17,65 @@ Step 1: Install NVM (Node Version Manager)
 
 Run the following command to download and install NVM:
 
-## curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 
 After the installation, you need to load NVM. You can do this by adding the following lines to your `~/.bashrc` or `~/.bash_profile`:
 
-## export NVM_DIR="$HOME/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 Then, run:
 
-## source ~/.bashrc
+    source ~/.bashrc
 
-Step 2: Install the Latest Version of Node.js
+## Step 2: Install the Latest Version of Node.js
     Now that NVM is installed, you can install the latest version of Node.js by running:
-
-##   nvm install node
+    nvm install node
 
 You can verify the installation by checking the Node.js version:
-##   node -v
+    node -v
 
-Step 3: Set Default Node.js Version
+## Step 3: Set Default Node.js Version
 To set the installed version as the default, run:
+nvm alias default node
 
-## nvm alias default node
+##Install Git:
+    sudo apt update
+    sudo apt install git
 
-Install Git:
-## sudo apt update
-## sudo apt install git
+##Create a new directory for the project and navigate into it
 
-Create a new directory for the project and navigate into it
+    mkdir asic-data-collection
 
-## mkdir asic-data-collection
+##Navigate to the asic-data-collection directory
 
-Navigate to the asic-data-collection directory
+    cd asic-data-collection
 
-## cd asic-data-collection
+    git clone https://github.com/Aringka84/asic-data-collection
 
-## git clone https://github.com/Aringka84/asic-data-collection
-
-## npm install -g npm@11.2.0
+    npm install -g npm@11.2.0
 
     
-New Screen Session
-## sudo apt install screen
+##New Screen Session
+    sudo apt install screen
 
 
-Start/Run:
+##Start/Run:
 
-## screen -S <Session-NAME>
+    screen -S <Session-NAME>
     
-##node fetchRepresentatives.js <starting-id> <Ending-id> 
-Be sure to enter starting/ending id #
+    node fetchRepresentatives.js <starting-id> <Ending-id> 
 
 
 ---------------------------------------------------------
+##Key Components
 
-Key Components
-
-Configuration File (config.js)
+##Configuration File (config.js)
 This file exports an object containing various settings for the API requests, including:
 
     API URL: The endpoint for fetching representative details.
 
-    Request Headers: Necessary headers for the API requests speed of requests.
+    Request Headers: Necessary headers for the API requests.
 
     Request Behavior: Settings for request intervals, retries, and handling of existing data.
 
