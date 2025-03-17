@@ -18,7 +18,7 @@ sudo apt install curl
 Run the following command to download and install NVM:
 
 ```
- curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash ```
+ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash 
 
 After the installation, you need to load NVM. You can do this by adding the following lines to your `~/.bashrc` or `~/.bash_profile`:
 
