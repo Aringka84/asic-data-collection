@@ -123,7 +123,8 @@ If any fetch fails, the ID is logged for retrying later.
 ### Final Logging
 After processing all IDs, it logs the total number of successful fetches and any failed IDs.
 
-## Optional - Google Sheets API Setup
+## Optional - Google Sheets API Setup - Not Required but supported
+
 ### Create a Google Cloud Platform Project
 1. Go to the Google Cloud Console.
 2. Create a new project or select an existing one.
