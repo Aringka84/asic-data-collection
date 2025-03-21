@@ -39,8 +39,9 @@ Then, run:
 ```
 
 You can verify the installation by checking the Node.js version:
-    node -v
-
+```bash
+   node -v
+```
 ## Step 3: Set Default Node.js Version
 To set the installed version as the default, run:
 
