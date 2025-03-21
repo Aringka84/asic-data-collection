@@ -29,7 +29,7 @@ module.exports = {
     
     // ID Range (can be overridden via command line arguments)
     defaultStartId: 500000,
-    defaultEndId: 505000,
+    defaultEndId: 566401,
     
     // Google Sheet Configuration
     spreadsheetId: "Enter-Spreadsheet-ID-HERE",  // The ID from your Google Sheet URL
