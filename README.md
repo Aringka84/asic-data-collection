@@ -65,6 +65,9 @@ To set the installed version as the default, run:
 ```bash
     npm install -g npm@11.2.0
 ```
+```bash
+    npm install node-fetch
+```
     
 New Screen Session
 ```bash
